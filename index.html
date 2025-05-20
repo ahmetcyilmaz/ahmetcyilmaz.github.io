@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miraç Yılmaz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+
+
+    <header>
+        <a href="" class="brand" data-aos="zoom-in" data-aos-duration="1000">Miraç Yılmaz</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="#main" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Anasayfa</a>
+            <a href="#about"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Hakkımda</a>
+            <a href="#contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">İletişim</a>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="content">
+            <h2 style="color:white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Merhaba, Ben <br><span>Miraç Yılmaz</span></h2>
+            <div class="animated-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                <h3>Psikolog</h3>
+                <h3>‎ </h3>
+                <h3>Psychologist</h3>
+            </div>
+            <a href="#about" class="btn" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">Hakkımda</a>
+            <div class="media-icons">
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1200"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1300"><i class="fab fa-instagram"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1400"><i class="fab fa-twitter"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1500"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+<!--  About Section -->
+
+    <section class="about" id="about">
+        <div class="title reveal">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Hakkımda</h2>
+        </div>
+        <div class="content">
+            <div class="column col-left reveal">
+                <div class="img-card" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+                    <img src="Image/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="column col-right reveal">
+                <h2 class="content-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Selamlar! Ben Miraç Yılmaz.</h2>
+                <p class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">Merhaba, ben Psikolog Miraç Yılmaz.
+                Psikoloji alanındaki yolculuğuma İstanbul Atlas Üniversitesi Psikoloji Bölümünden mezun olarak başladım.
+                Eğitim sürecim boyunca, bireylerin psikolojik iyi oluşunu desteklemeye yönelik birçok kurumsal ve pratik eğitim aldım.
+                Çalışma alanlarım arasında depresyon, kaygı bozuklukları, travma sonrası stres bozukluğu, ilişki problemleri ve özsaygı ile ilgili konular yer almaktadır.
+                İnsan kaynakları bölümünde hâlâ çalıştığım devlet kurumu sayesinde bu alanda bilgili ve tecrübeliyim.
+                Bireysel olarak çözümleyici, grup çalışmasına uyumlu, disiplinli ve özgün biriyim.
+                Siz de yaşamınızda bir değişim arayışındaysanız, bu yolculukta size eşlik etmekten memnuniyet duyarım.</p>
+                <a href="#contact" class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="600">İletişim</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title reveal">
+          <h2 class="section-title">İletişim</h2>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="card reveal">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info">
+                <h3>Adres</h3>
+                <span>Dökmetaş Mahallesi
+                Elazığ Bulvarı no:429
+                DİYARBAKIR/TÜRKİYE
+                </span>
+              </div>
+            </div>
+            <div class="card reveal">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info">
+                <h3>Telefon</h3>
+                <span>+90 537 791 7008</span>
+              </div>
+            </div>
+            <div class="card reveal">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info">
+                <h3>Email Adres</h3>
+                <span>miracc2122@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+
+        window.addEventListener("scroll", function(){
+    scrollBtn.classList.toggle("active", window.scrollY > 500);
+});
+
+//javascript for scroll back to top on click scroll-to-top button
+
+// document.querySelector(".scrollToTop-btn").addEventListener("click", () => {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// });
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        const navigationItems = document.querySelector(".navigation a");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        })
+
+        // Navigation Effects
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        navigationItems.forEach((navigationItem) => {
+            navigationItem.addEventListener("click", () => {
+                menuBtn.classList.remove("active");
+                navigation.classList.remove("active")
+            })
+        })
+
+
+
+    </script>
+</body>
+</html>
