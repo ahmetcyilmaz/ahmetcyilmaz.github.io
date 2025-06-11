@@ -415,7 +415,10 @@ header.sticky .navigation a:hover {
 
   @media (max-width: 768px) {
   .main {
-    background: url('Image/mobile-bg.jpg') no-repeat center center fixed;
+    background-image: url('Image/mobile-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     }
     }
